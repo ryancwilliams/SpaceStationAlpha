@@ -70,4 +70,11 @@
     nbproject/build-impl.xml file. 
 
     -->
+    
+    <target name="-post-compile">
+             <copydir 
+                 src="lib/native" 
+                 dest="dist/lib/native" 
+             />
+    </target>
 </project>
