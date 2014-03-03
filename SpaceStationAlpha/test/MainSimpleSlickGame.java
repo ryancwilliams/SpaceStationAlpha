@@ -14,8 +14,6 @@
  * limitations under the License.
  */
 
-import com.github.ryancwilliams.SpaceStationAlpha.LWJGL.loader;
-
 /**
  *
  * @author ryancwilliams
@@ -28,12 +26,6 @@ public class MainSimpleSlickGame {
     public static void main(String[] args) {
                 
         System.out.println("java.library.path= " + 
-                System.getProperty("java.library.path"));
-        
-        System.out.println("Loading Libs");
-        loader.loadLibrary();
-        
-         System.out.println("java.library.path= " + 
                 System.getProperty("java.library.path"));
         
         System.out.println("Running App");
