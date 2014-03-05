@@ -32,6 +32,8 @@ public class SimpleSlickGame extends BasicGame
 			AppGameContainer appgc;
 			appgc = new AppGameContainer(new SimpleSlickGame("Simple Slick Game"));
 			appgc.setDisplayMode(640, 480, false);
+                        //Hide FPS
+                        appgc.setShowFPS(false);
 			appgc.start();
 		}
 		catch (SlickException ex)
