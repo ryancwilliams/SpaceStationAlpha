@@ -38,6 +38,9 @@ public class SpriteSheet {
      */
     public SpriteSheet(Image source) {
         this.source = source;
+        
+        //Set the scale filter to be sharp.
+        this.source.setFilter(Image.FILTER_NEAREST);
     }
 
     /**
