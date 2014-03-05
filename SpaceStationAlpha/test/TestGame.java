@@ -16,6 +16,8 @@
 
 
 import com.github.ryancwilliams.SpaceStationAlpha.*;
+import com.github.ryancwilliams.SpaceStationAlpha.graphics.Sprite;
+import com.github.ryancwilliams.SpaceStationAlpha.graphics.SpriteSheet;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import org.newdawn.slick.AppGameContainer;
@@ -55,7 +57,7 @@ public class TestGame extends org.newdawn.slick.BasicGame {
     }
 
     public static void main(String[] args) {
-        Game.loadGame();
+        TestGame.loadGame();
     }
 
     /**
@@ -63,26 +65,37 @@ public class TestGame extends org.newdawn.slick.BasicGame {
      */
     public static void loadGame() {
         //Create a new game
-        Game game = new Game(Game.GAME_NAME);
+        TestGame game = new TestGame(TestGame.GAME_NAME);
 
         try {
             //Create a game container
             AppGameContainer gameContainer = new AppGameContainer(game);
             //Set up the game display
-            gameContainer.setDisplayMode(Game.width, Game.height, Game.fullscreen);
+            gameContainer.setDisplayMode(TestGame.width, TestGame.height, TestGame.fullscreen);
 
             //Set up FPS counter
-            gameContainer.setShowFPS(Game.fpsCounter);
-
+            gameContainer.setShowFPS(TestGame.fpsCounter);
+            
             //Start the game
             gameContainer.start();
         } catch (SlickException ex) {
             Logger.getLogger(Game.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
+    
+    public void loadResources() throws SlickException {
+        SpriteSheet sheet1 = new SpriteSheet("res/test.png");
+        
+        sprite1 = new Sprite(sheet1, 0, 0, 32, 16);
+    }
 
+    Sprite sprite1;
+    
     @Override
     public void init(GameContainer container) throws SlickException {
+        
+        loadResources();
+        
         
 //        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
@@ -95,7 +108,8 @@ public class TestGame extends org.newdawn.slick.BasicGame {
 
     @Override
     public void render(GameContainer container, Graphics g) throws SlickException {
-        
+        g.scale(2, 2);
+        sprite1.render(g, 25, 25);
 //        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
