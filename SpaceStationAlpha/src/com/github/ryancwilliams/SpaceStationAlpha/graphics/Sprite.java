@@ -23,7 +23,7 @@ import org.newdawn.slick.Image;
  *
  * @author ryancwilliams
  */
-public class Sprite {
+public class Sprite implements Renderable {
 
     /**
      * The image of this sprite
@@ -77,5 +77,15 @@ public class Sprite {
      */
     public int getHeight() {
         return this.sprite.getHeight();
+    }
+
+    @Override
+    public void initialize() {
+        
+    }
+
+    @Override
+    public void render(Graphics g, int x, int y) {
+        g.drawImage(this.sprite, x, y);
     }
 }
