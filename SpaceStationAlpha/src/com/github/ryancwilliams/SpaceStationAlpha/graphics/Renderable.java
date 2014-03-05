@@ -25,15 +25,15 @@ import org.newdawn.slick.Graphics;
 public interface Renderable {
 
     /**
-     * This method contains the code used to initialize this Renderable so it
-     * can be rendered.
+     * This method is used to initialize this Renderable so it can be rendered.
      */
     public void initialize();
 
     /**
-     * This method contains the code used to render this Renderable.
-     * @param g The graphics context that can be used to render. 
-     * However, normal rendering routines can also be used.
+     * This method is used to render this Renderable.
+     *
+     * @param g The graphics context that can be used to render. However, normal
+     * rendering routines can also be used.
      * @param x The x coordinate on the screen to render this Renderable at.
      * @param y The y coordinate on the screen to render this Renderable at.
      */
