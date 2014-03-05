@@ -42,6 +42,7 @@ public class SpriteSheet {
 
     /**
      * Creates a new sprite sheet using the specified location as the source.
+     *
      * @param ref The location of the image file to load
      * @throws SlickException Indicates a failure to load the image
      */
@@ -52,6 +53,7 @@ public class SpriteSheet {
     /**
      * Creates a new sprite sheet using the specified location as the source.
      * This constructor allows for a color to be used to mark transparency.
+     *
      * @param ref The location of the image file to load
      * @param trans The color to be treated as transparent
      * @throws SlickException Indicates a failure to load the image
@@ -59,7 +61,7 @@ public class SpriteSheet {
     public SpriteSheet(String ref, Color trans) throws SlickException {
         this(new Image(ref, trans));
     }
-    
+
     /**
      * Extracts a sub-image from this sprite sheet.
      *

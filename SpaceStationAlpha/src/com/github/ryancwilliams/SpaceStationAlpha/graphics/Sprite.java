@@ -13,7 +13,6 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
 package com.github.ryancwilliams.SpaceStationAlpha.graphics;
 
 import org.newdawn.slick.Graphics;
@@ -21,10 +20,11 @@ import org.newdawn.slick.Image;
 
 /**
  * A sprite that can be drawn.
+ *
  * @author ryancwilliams
  */
 public class Sprite {
-    
+
     /**
      * The image of this sprite
      */
@@ -32,14 +32,16 @@ public class Sprite {
 
     /**
      * Creates a sprite from a image.
+     *
      * @param image The image to create the sprite from
      */
     public Sprite(Image image) {
         this.sprite = image;
     }
-    
+
     /**
-     * Creates a sprite using a image extracted from a sprite sheet. 
+     * Creates a sprite using a image extracted from a sprite sheet.
+     *
      * @param spriteSheet The Sprite Sheet to extract from
      * @param x The x coordinate of the image on the sprite sheet.
      * @param y The y coordinate of the image on the sprite sheet.
@@ -52,6 +54,7 @@ public class Sprite {
 
     /**
      * Gets the image of this sprite.
+     *
      * @return the image of this sprite.
      */
     public Image getSprite() {

@@ -13,25 +13,28 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-
 package com.github.ryancwilliams.SpaceStationAlpha.graphics;
 
 import org.newdawn.slick.Graphics;
 
 /**
  * This interface is used render all objects that are Renderable.
+ *
  * @author ryancwilliams
  */
 public interface Renderable {
+
     /**
-     * This method contains the code used to initialize 
-     * this Renderable so it can be rendered.
+     * This method contains the code used to initialize this Renderable so it
+     * can be rendered.
      */
     public void initialize();
+
     /**
      * This method contains the code used to render this Renderable.
-     * @param g The graphics context that can be used to render. 
-     * However, normal rendering routines can also be used.
+     *
+     * @param g The graphics context that can be used to render. However, normal
+     * rendering routines can also be used.
      */
     public void render(Graphics g);
 }
