@@ -16,6 +16,8 @@
 
 package com.github.ryancwilliams.SpaceStationAlpha;
 
+import org.newdawn.slick.Graphics;
+
 /**
  * This interface is used render all objects that are Renderable.
  * @author ryancwilliams
@@ -28,6 +30,8 @@ public interface Renderable {
     public void initialize();
     /**
      * This method contains the code used to render this Renderable.
+     * @param g The graphics context that can be used to render. 
+     * However, normal rendering routines can also be used.
      */
-    public void render();
+    public void render(Graphics g);
 }
