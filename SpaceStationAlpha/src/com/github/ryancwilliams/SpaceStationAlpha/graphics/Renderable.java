@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.github.ryancwilliams.SpaceStationAlpha;
+package com.github.ryancwilliams.SpaceStationAlpha.graphics;
 
 import org.newdawn.slick.Graphics;
 
@@ -32,6 +32,8 @@ public interface Renderable {
      * This method contains the code used to render this Renderable.
      * @param g The graphics context that can be used to render. 
      * However, normal rendering routines can also be used.
+     * @param x The x coordinate on the screen to render this Renderable at.
+     * @param y The y coordinate on the screen to render this Renderable at.
      */
-    public void render(Graphics g);
+    public void render(Graphics g, int x, int y);
 }
