@@ -22,11 +22,12 @@ package com.github.ryancwilliams.SpaceStationAlpha;
  */
 public interface Renderable {
     /**
-     * Initializes this Renderable so it can be rendered.
+     * This method contains the code used to initialize 
+     * this Renderable so it can be rendered.
      */
     public void initialize();
     /**
-     * Renders this Renderable.
+     * This method contains the code used to render this Renderable.
      */
     public void render();
 }
