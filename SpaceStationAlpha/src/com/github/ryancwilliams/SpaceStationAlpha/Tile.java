@@ -57,7 +57,7 @@ public class Tile implements Renderable {
     }
 
     @Override
-    public void render(Graphics g) {
-        g.drawImage(image, coordX, coordX);
+    public void render(Graphics g, int x, int y) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 }
