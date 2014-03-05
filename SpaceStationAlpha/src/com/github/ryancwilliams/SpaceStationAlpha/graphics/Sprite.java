@@ -60,4 +60,22 @@ public class Sprite {
     public Image getSprite() {
         return sprite;
     }
+
+    /**
+     * Gets the width of this sprite.
+     *
+     * @return the width of this sprite
+     */
+    public int getWidth() {
+        return this.sprite.getWidth();
+    }
+
+    /**
+     * Gets the height of this sprite.
+     *
+     * @return The height of this sprite.
+     */
+    public int getHeight() {
+        return this.sprite.getHeight();
+    }
 }
