@@ -100,7 +100,7 @@ public class Sprite implements Renderable {
      *
      * @return the name of the sprite.
      */
-    public String getNAME() {
+    public String getName() {
         return NAME;
     }
 
