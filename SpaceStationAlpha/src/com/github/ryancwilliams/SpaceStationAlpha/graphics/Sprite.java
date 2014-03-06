@@ -96,6 +96,15 @@ public class Sprite implements Renderable {
     }
 
     /**
+     * Gets the name of the sprite.
+     *
+     * @return the name of the sprite.
+     */
+    public String getNAME() {
+        return NAME;
+    }
+
+    /**
      * Gets the width of this sprite.
      *
      * @return the width of this sprite
