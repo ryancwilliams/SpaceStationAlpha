@@ -83,7 +83,7 @@ public class Sprite implements Renderable {
      * @param height The height of the image on the sprite sheet.
      */
     public Sprite(SpriteSheet spriteSheet, int x, int y, int width, int height) {
-        this(null, spriteSheet, x, y, width, height);
+        this(spriteSheet.extract(x, y, width, height));
     }
 
     /**
