@@ -79,7 +79,7 @@ public class TestGame extends org.newdawn.slick.BasicGame {
             //Start the game
             gameContainer.start();
         } catch (SlickException ex) {
-            Logger.getLogger(Game.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(TestGame.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
     
