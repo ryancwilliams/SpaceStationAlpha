@@ -45,13 +45,18 @@ public class SpriteRegistry {
     private static final String NULL_REF = "res/null.png";
 
     static {
+        //Create a holdeing varable
+        Sprite nullSprite = null;
         // Load the Null Sprite
         try {
-            NULL_SPRITE = new Sprite(new Image(NULL_REF));
+            //Load the Null Sprite into the holding varable 
+            nullSprite = new Sprite(new Image(NULL_REF));
         } catch (SlickException ex) {
             Logger.getLogger(SpriteRegistry.class.getName())
                     .log(Level.SEVERE, "Can not access res/null.png", ex);
         }
+        //Store the holding varable to the NULL_SPRITE constent
+        NULL_SPRITE = nullSprite;
     }
 
     /**
