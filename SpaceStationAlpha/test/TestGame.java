@@ -17,6 +17,7 @@
 
 import com.github.ryancwilliams.SpaceStationAlpha.*;
 import com.github.ryancwilliams.SpaceStationAlpha.graphics.Sprite;
+import com.github.ryancwilliams.SpaceStationAlpha.graphics.SpriteRegistry;
 import com.github.ryancwilliams.SpaceStationAlpha.graphics.SpriteSheet;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -86,10 +87,11 @@ public class TestGame extends org.newdawn.slick.BasicGame {
     public void loadResources() throws SlickException {
         SpriteSheet sheet1 = new SpriteSheet("res/test.png");
         
-        sprite1 = new Sprite(sheet1, 0, 0, 32, 16);
+        SpriteRegistry.addSprite(new Sprite("0", sheet1, 0, 0, 16, 16));
+        SpriteRegistry.addSprite(new Sprite("1", sheet1, 16, 0, 16, 16));
+        SpriteRegistry.addSprite(new Sprite("2", sheet1, 32, 0, 16, 16));
+        SpriteRegistry.addSprite(new Sprite("3", sheet1, 48, 0, 16, 16));
     }
-
-    Sprite sprite1;
     
     @Override
     public void init(GameContainer container) throws SlickException {
@@ -109,7 +111,13 @@ public class TestGame extends org.newdawn.slick.BasicGame {
     @Override
     public void render(GameContainer container, Graphics g) throws SlickException {
         g.scale(2, 2);
-        sprite1.render(g, 25, 25);
+        
+        SpriteRegistry.getSprite("0").render(g, 16, 16);
+        SpriteRegistry.getSprite("1").render(g, 32, 16);
+        SpriteRegistry.getSprite("2").render(g, 16, 32); 
+        SpriteRegistry.getSprite("3").render(g, 32, 32);
+        
+        SpriteRegistry.getSprite("fakesprite").render(g, 48, 48);
 //        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
