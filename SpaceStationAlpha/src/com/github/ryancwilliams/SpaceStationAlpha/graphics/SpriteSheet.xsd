@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            elementFormDefault="qualified" targetNamespace="http://github.com/ryancwilliams/SpaceStationAlpha" xmlns:tns="http://github.com/ryancwilliams/SpaceStationAlpha">
+    <xsd:element name="spriteSheet">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="sprite">
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            <xsd:element name="name" type="xsd:string"/>
+                            <xsd:element name="xCoord" type="xsd:integer"></xsd:element>
+                            <xsd:element name="yCoord" type="xsd:integer"></xsd:element>
+                            <xsd:element name="width" type="xsd:integer"></xsd:element>
+                            <xsd:element name="height" type="xsd:integer"></xsd:element>
+                        </xsd:sequence>
+                    </xsd:complexType>
+                </xsd:element>
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+</xsd:schema>
