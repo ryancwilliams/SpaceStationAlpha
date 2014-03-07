@@ -15,7 +15,6 @@
  */
 package com.github.ryancwilliams.SpaceStationAlpha.graphics;
 
-import java.util.ArrayList;
 import java.util.Map;
 import java.util.TreeMap;
 import java.util.logging.Level;
