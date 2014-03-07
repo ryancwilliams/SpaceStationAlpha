@@ -76,5 +76,9 @@
                  src="lib/native" 
                  dest="dist/lib/native" 
              />
+             <copydir 
+                 src="res" 
+                 dest="dist/res" 
+             />
     </target>
 </project>
