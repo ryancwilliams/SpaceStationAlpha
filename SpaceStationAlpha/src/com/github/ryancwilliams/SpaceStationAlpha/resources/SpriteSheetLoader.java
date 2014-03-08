@@ -38,7 +38,6 @@ public class SpriteSheetLoader {
     public static List<Sprite> readSprites(InputStream xmlFile, SpriteSheet spriteSheet) {
         List<Sprite> sprites = new ArrayList<>();
         try {
-
             //Create a new XML inputFactory
             XMLInputFactory inputFactory = XMLInputFactory.newInstance();
 
