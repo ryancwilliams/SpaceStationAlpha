@@ -8,11 +8,11 @@
                 <xsd:element name="sprite" maxOccurs="unbounded">
                     <xsd:complexType>
                         <xsd:sequence>
-                            <xsd:element name="name" type="xsd:string" minOccurs="1" maxOccurs="1" nillable="false"/>
-                            <xsd:element name="xCoord" type="xsd:integer" minOccurs="1" nillable="false" maxOccurs="1"></xsd:element>
-                            <xsd:element name="yCoord" type="xsd:integer" minOccurs="1" maxOccurs="1" nillable="false"></xsd:element>
-                            <xsd:element name="width" type="xsd:integer" minOccurs="1" maxOccurs="1" nillable="false"></xsd:element>
-                            <xsd:element name="height" type="xsd:integer" minOccurs="1" maxOccurs="1" nillable="false"></xsd:element>
+                            <xsd:attribute name="name" type="xsd:string"/>
+                            <xsd:attribute name="xCoord" type="xsd:integer"/>
+                            <xsd:attribute name="yCoord" type="xsd:integer"/>
+                            <xsd:attribute name="width" type="xsd:integer"/>
+                            <xsd:attribute name="height" type="xsd:integer"/>
                         </xsd:sequence>
                     </xsd:complexType>
                 </xsd:element>
